@@ -5,7 +5,11 @@ npm install
 node index.js
 ```
 
-And visit <http://localhost:3000/>.
+## Testing
+
+Visit <http://localhost:3000/>.
+
+You can test using the served HTML, which is served inline from the node app. But of course, the idea is that you will be uploading data from another system, such as your Android app. 
 
 
 ## History of changes 
