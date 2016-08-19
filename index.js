@@ -39,6 +39,9 @@ app.get('/', function(req, res){
 
 app.post('/', multipartMiddleware, function(req, resp) {
   console.log(req.body, req.files);
+  console.log(req.files.file);
+  //shell.cp(req.files.file['path'], path.join(__dirname,'file.wav')); // throws Error here
+
   // don't forget to delete all req.files when done
 });
 
